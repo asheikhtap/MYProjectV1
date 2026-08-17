@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>مشاريعي - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo"><span data-i18n="site.name">أحمد</span><span class="dot"></span></a>
+            <ul class="nav-links">
+                <li><a href="Index.html" data-i18n="nav.home">الرئيسية</a></li>
+                <li><a href="about.html" data-i18n="nav.about">من أنا</a></li>
+                <li><a href="portfolio.html" class="active" data-i18n="nav.portfolio">مشاريعي</a></li>
+                <li><a href="services.html" data-i18n="nav.services">الخدمات</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <div class="lang-switcher">
+                    <button class="active" data-lang="ar" data-i18n="nav.lang.ar">عربي</button>
+                    <button data-lang="en" data-i18n="nav.lang.en">EN</button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" title="تبديل الوضع">
+                    <span class="sun">☀️</span><span class="moon">🌙</span>
+                </button>
+                <a href="contact.html" class="nav-cta" data-i18n="nav.contact">تواصل معي</a>
+                <button class="hamburger" id="hamburger"><span></span><span></span><span></span></button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+        <a href="Index.html" data-i18n="nav.home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav.about">من أنا</a>
+        <a href="portfolio.html" class="active" data-i18n="nav.portfolio">مشاريعي</a>
+        <a href="services.html" data-i18n="nav.services">الخدمات</a>
+        <a href="contact.html" class="nav-cta" data-i18n="nav.contact">تواصل معي</a>
+    </div>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="portfolio.title">مشاريعي</h2>
+            </div>
+
+            <div class="filter-buttons">
+                <button class="filter-btn active" data-filter="all" data-i18n="portfolio.filter.all">الكل</button>
+                <button class="filter-btn" data-filter="ecommerce" data-i18n="portfolio.filter.ecommerce">متاجر</button>
+                <button class="filter-btn" data-filter="app" data-i18n="portfolio.filter.app">تطبيقات</button>
+                <button class="filter-btn" data-filter="website" data-i18n="portfolio.filter.website">مواقع</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 - ecommerce -->
+                <div class="project-card" data-category="ecommerce">
+                    <div class="project-image">
+                        <img src="Images/project-1.jpg" alt="متجر إلكتروني">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-accent" data-i18n="portfolio.view">اعرض الموقع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project1.title">متجر إلكتروني</h3>
+                        <p data-i18n="portfolio.project1.desc">منصة تجارة إلكترونية كاملة مع نظام دفع وإدارة المخزون</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 - app -->
+                <div class="project-card" data-category="app">
+                    <div class="project-image">
+                        <img src="Images/project-3.jpg" alt="تطبيق المهام">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-accent" data-i18n="portfolio.view">اعرض الموقع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project2.title">تطبيق إدارة المهام</h3>
+                        <p data-i18n="portfolio.project2.desc">تطبيق ويب لإدارة المهام اليومية مع ميزات متقدمة</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 - website -->
+                <div class="project-card" data-category="website">
+                    <div class="project-image">
+                        <img src="Images/project-4.jpg" alt="موقع تعليمي">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-accent" data-i18n="portfolio.view">اعرض الموقع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project3.title">موقع تعليمي</h3>
+                        <p data-i18n="portfolio.project3.desc">منصة تعليمية تفاعلية لتعلم البرمجة</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 4 - website -->
+                <div class="project-card" data-category="website">
+                    <div class="project-image">
+                        <img src="Images/blog.jpg" alt="مدونة شخصية">
+                        <div class="project-overlay">
+                            <a href="#" class="btn btn-accent" data-i18n="portfolio.view">اعرض الموقع</a>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project4.title">مدونة شخصية</h3>
+                        <p data-i18n="portfolio.project4.desc">مدونة حول تطوير الويب والتقنيات الحديثة</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="Index.html" class="logo"><span data-i18n="site.name">أحمد</span><span class="dot"></span></a>
+                    <p data-i18n="footer.about.desc">مطور ويب متخصص</p>
+                    <div class="footer-socials"><a href="#">in</a><a href="#">gh</a><a href="#">ig</a></div>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.links">الروابط السريعة</h4>
+                    <ul>
+                        <li><a href="Index.html" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="portfolio.html" data-i18n="nav.portfolio">مشاريعي</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.contact">تواصل معي</h4>
+                    <p data-i18n="footer.email">البريد: example@email.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

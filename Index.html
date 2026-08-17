@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - أحمد</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="Index.html" class="logo"><span data-i18n="site.name">أحمد</span><span class="dot"></span></a>
+            <ul class="nav-links">
+                <li><a href="Index.html" class="active" data-i18n="nav.home">الرئيسية</a></li>
+                <li><a href="about.html" data-i18n="nav.about">من أنا</a></li>
+                <li><a href="portfolio.html" data-i18n="nav.portfolio">مشاريعي</a></li>
+                <li><a href="services.html" data-i18n="nav.services">الخدمات</a></li>
+            </ul>
+            <div class="navbar-actions">
+                <div class="lang-switcher">
+                    <button class="active" data-lang="ar" data-i18n="nav.lang.ar">عربي</button>
+                    <button data-lang="en" data-i18n="nav.lang.en">EN</button>
+                </div>
+                <button class="theme-toggle" id="themeToggle" title="تبديل الوضع">
+                    <span class="sun">☀️</span>
+                    <span class="moon">🌙</span>
+                </button>
+                <a href="contact.html" class="nav-cta" data-i18n="nav.contact">تواصل معي</a>
+                <button class="hamburger" id="hamburger">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile Nav Overlay -->
+    <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+    <div class="mobile-nav" id="mobileNav">
+        <a href="Index.html" class="active" data-i18n="nav.home">الرئيسية</a>
+        <a href="about.html" data-i18n="nav.about">من أنا</a>
+        <a href="portfolio.html" data-i18n="nav.portfolio">مشاريعي</a>
+        <a href="services.html" data-i18n="nav.services">الخدمات</a>
+        <a href="contact.html" data-i18n="nav.contact">تواصل معي</a>
+        <div class="lang-switcher" style="margin-top:20px">
+            <button class="active" data-lang="ar">عربي</button>
+            <button data-lang="en">EN</button>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-bg-grid"></div>
+        <div class="hero-bg-gradient"></div>
+        <div class="container">
+            <div class="hero-content">
+                <span class="hero-badge" data-i18n="hero.label">مطور ويب<span class="pulse"></span></span>
+                <h1 class="hero-title">
+                    <span data-i18n="hero.title.1">مرحباً، أنا</span><br>
+                    <span class="accent" data-i18n="hero.title.2">أحمد</span>
+                </h1>
+                <p class="subtitle" data-i18n="hero.desc">أنشئ تطبيقات ويب احترافية وسريعة تحقق أهداف عملك.</p>
+                <div class="hero-buttons">
+                    <a href="portfolio.html" class="btn btn-accent">
+                        <span data-i18n="hero.btn.works">اعرض أعمالي</span>
+                        <span class="arrow">←</span>
+                    </a>
+                    <a href="contact.html" class="btn btn-outline" data-i18n="hero.btn.contact">تواصل معي</a>
+                </div>
+                <div class="hero-socials">
+                    <a href="#" title="LinkedIn">in</a>
+                    <a href="#" title="GitHub">gh</a>
+                    <a href="#" title="Instagram">ig</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-ring"></div>
+                    <div class="hero-image-accent"></div>
+                    <div class="hero-image-circle">
+                        <img src="Images/profile.jpg" alt="صورة شخصية">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-row">
+                <div class="stat-item animate-on-scroll">
+                    <span class="number">3+</span>
+                    <span class="label" data-i18n="stat.years">سنوات الخبرة</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item animate-on-scroll delay-1">
+                    <span class="number">15+</span>
+                    <span class="label" data-i18n="stat.projects">مشروع مكتمل</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item animate-on-scroll delay-2">
+                    <span class="number">20+</span>
+                    <span class="label" data-i18n="stat.clients">عميل راضي</span>
+                </div>
+                <div class="stat-divider"></div>
+                <div class="stat-item animate-on-scroll delay-3">
+                    <span class="number">100%</span>
+                    <span class="label" data-i18n="stat.quality">جودة الخدمة</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bento Grid / About Preview -->
+    <section class="bento-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="about.title">من أنا</h2>
+            </div>
+            <div class="bento-grid">
+                <!-- Main card -->
+                <div class="bento-card span-2 animate-on-scroll">
+                    <div class="bento-deco-grid-bg"></div>
+                    <div class="bento-card-text-overlay">
+                        <span class="card-label" data-i18n="bento.dev.label">تطوير ويب</span>
+                        <h3 class="card-title" data-i18n="bento.dev.title">مطور ويب متخصص في بناء تطبيقات احترافية وفعالة</h3>
+                    </div>
+                </div>
+                <!-- Languages -->
+                <div class="bento-card animate-on-scroll delay-1">
+                    <div class="bento-deco-grid-bg"></div>
+                    <div class="bento-card-text-overlay">
+                        <span class="card-label" data-i18n="bento.lang.label">اللغات</span>
+                        <h3 class="card-title" data-i18n="bento.lang.title">أتقن العربية والإنجليزية بشكل احترافي</h3>
+                    </div>
+                </div>
+                <!-- Tech Stack -->
+                <div class="bento-card animate-on-scroll delay-2">
+                    <div class="bento-deco-grid-bg"></div>
+                    <div class="bento-card-text-overlay">
+                        <span class="card-label" data-i18n="bento.tech.label">التقنيات</span>
+                        <h3 class="card-title" data-i18n="bento.tech.title">التقنيات الرئيسية</h3>
+                        <div class="tech-stack" style="margin-top:16px">
+                            <div style="display:flex;flex-wrap:wrap;gap:8px">
+                                <span class="tech-item">HTML</span>
+                                <span class="tech-item">CSS</span>
+                                <span class="tech-item">JavaScript</span>
+                                <span class="tech-item">React</span>
+                                <span class="tech-item">Node.js</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- About summary -->
+                <div class="bento-card animate-on-scroll delay-1">
+                    <div class="bento-deco-grid-bg"></div>
+                    <div class="bento-card-text-overlay">
+                        <span class="card-label" data-i18n="bento.about.label">نبذة عني</span>
+                        <h3 class="card-title" data-i18n="bento.about.title">أطمح دائماً لتقديم أفضل الحلول الرقمية</h3>
+                    </div>
+                </div>
+                <!-- CTA card -->
+                <div class="bento-card span-2 animate-on-scroll delay-2" style="align-items:center;text-align:center;justify-content:center">
+                    <div class="bento-deco-grid-bg"></div>
+                    <div class="bento-card-text-overlay" style="align-items:center">
+                        <h3 class="card-title" style="margin-bottom:20px" data-i18n="bento.cta.title">هل تريد طرح سؤال؟</h3>
+                        <a href="contact.html" class="btn btn-accent">
+                            <span data-i18n="bento.cta.btn">تواصل معي</span>
+                            <span class="arrow">←</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="services.title">الخدمات الرئيسية</h2>
+                <p data-i18n="services.subtitle">أقدم مجموعة شاملة من خدمات تطوير الويب</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="icon-container">💻</div>
+                    <h3 data-i18n="services.webdesign.title">تصميم الويب</h3>
+                    <p class="description" data-i18n="services.webdesign.desc">تصاميم حديثة وجذابة تعكس هويتك</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-1">
+                    <div class="icon-container">⚙️</div>
+                    <h3 data-i18n="services.webdev.title">تطوير الويب</h3>
+                    <p class="description" data-i18n="services.webdev.desc">مواقع ديناميكية بتقنيات حديثة</p>
+                </div>
+                <div class="service-card animate-on-scroll delay-2">
+                    <div class="icon-container">🚀</div>
+                    <h3 data-i18n="services.performance.title">تحسين الأداء</h3>
+                    <p class="description" data-i18n="services.performance.desc">مواقع سريعة وموثوقة</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Preview -->
+    <section class="portfolio-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 data-i18n="portfolio.title">مشاريعي</h2>
+            </div>
+            <div class="projects-grid">
+                <div class="project-card animate-on-scroll">
+                    <div class="project-image">
+                        <img src="Images/project-1.jpg" alt="متجر إلكتروني">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project1.title">متجر إلكتروني</h3>
+                        <p data-i18n="portfolio.project1.desc">منصة تجارة إلكترونية كاملة</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll delay-1">
+                    <div class="project-image">
+                        <img src="Images/project-3.jpg" alt="تطبيق المهام">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project2.title">تطبيق إدارة المهام</h3>
+                        <p data-i18n="portfolio.project2.desc">تطبيق ويب لإدارة المهام اليومية</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-card animate-on-scroll delay-2">
+                    <div class="project-image">
+                        <img src="Images/project-4.jpg" alt="موقع تعليمي">
+                    </div>
+                    <div class="project-info">
+                        <h3 data-i18n="portfolio.project3.title">موقع تعليمي</h3>
+                        <p data-i18n="portfolio.project3.desc">منصة تعليمية تفاعلية</p>
+                        <div class="project-tags">
+                            <span>HTML</span><span>CSS</span><span>JavaScript</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align:center;margin-top:40px">
+                <a href="portfolio.html" class="btn btn-outline">
+                    <span data-i18n="btn.view.all">عرض جميع المشاريع</span>
+                    <span class="arrow">←</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <a href="Index.html" class="logo"><span data-i18n="site.name">أحمد</span><span class="dot"></span></a>
+                    <p data-i18n="footer.about.desc">مطور ويب متخصص في تطوير تطبيقات ويب حديثة وفعالة</p>
+                    <div class="footer-socials">
+                        <a href="#" title="LinkedIn">in</a>
+                        <a href="#" title="GitHub">gh</a>
+                        <a href="#" title="Instagram">ig</a>
+                    </div>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.links">الروابط السريعة</h4>
+                    <ul>
+                        <li><a href="Index.html" data-i18n="nav.home">الرئيسية</a></li>
+                        <li><a href="portfolio.html" data-i18n="nav.portfolio">مشاريعي</a></li>
+                        <li><a href="contact.html" data-i18n="nav.contact">التواصل</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4 data-i18n="footer.contact">تواصل معي</h4>
+                    <p data-i18n="footer.email">البريد: example@email.com</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="year"></span> <span data-i18n="footer.rights">جميع الحقوق محفوظة</span></p>
+                <div class="footer-bottom-links">
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="i18n.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
